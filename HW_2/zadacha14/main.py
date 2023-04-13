@@ -9,6 +9,5 @@ result = 0
 
 while result <= n:
     result = number ** degree
-    if result <= n:
-        print(f'2 в степени {degree} = {result}')
+    print(f'2 в степени {degree} = {result}')
     degree += 1

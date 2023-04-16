@@ -47,4 +47,4 @@ else:
         for k, v in value_en.items():
             if i in v:
                 points += k
-print(f'Слово {word_input} оценивается в {points} очков')
+print(f'Слово {word_input} оценивается в {points} очков!')

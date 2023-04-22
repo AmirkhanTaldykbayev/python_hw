@@ -3,11 +3,14 @@
 # 2 2
 #     4 
 
-def summa(first_num,second_num):                # def summa(2, 2)
-    if first_num == 0:                          # условие при котором произойдет выход из рекурсии 
-        return second_num                       # все единицы первого числа перешли к правому
-    return summa(first_num - 1, second_num + 1) # здесь происходит перенос единиц левого числа к правому
-                                                # summa((first_num - 1), (second_num + 1)); (2 - 1 = 1), (2 + 1 = 3)
-                                                # summa((first_num - 1), (second_num + 1)); (1 - 1 = 0 (выход из рекурсии)), (3 + 1 = 4)
+def summa(number_1,number_2):                # def summa(2, 2)
+    if number_1 == 0:                          # условие при котором произойдет выход из рекурсии 
+        return number_2                       # все единицы первого числа перешли к правому
+    return summa(number_1 - 1, number_2 + 1) # здесь происходит перенос единиц левого числа к правому
+                                                # summa((number_1 - 1), (number_2 + 1)); (2 - 1 = 1), (2 + 1 = 3)
+                                                # summa((number_1 - 1), (number_2 + 1)); (1 - 1 = 0 (выход из рекурсии)), (3 + 1 = 4)
 
-print(summa(5, 10))
+
+first_number = int(input('Введите первое число: '))
+second_number = int(input('Введите второе число: '))
+print(summa(first_number, second_number))

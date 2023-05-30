@@ -60,7 +60,7 @@ def delete_contact(pb: dict, index: int) -> str:
     global phone_book
     for contact in phone_book:
         if index == contact.get('id'):
-            pb.get('id').pop()
-            pb.get('name').pop()
-            pb.get('phone').pop()
-            pb.get('comment').pop()
+            contact['id'].pop()
+            contact['name'].pop()
+            contact['phone'].pop()
+            contact['comment'].pop()
